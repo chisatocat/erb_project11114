@@ -114,9 +114,18 @@ button:hover {
   text-align: center;
 }
 
-#user-signed-in h2 {
+#user-signed-in h2,
+#guest-access h2 {
+  padding-top: 20px;
   font-size: 1rem;
   color: var(--clr-white);
+}
+
+#guest-access {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 @media (max-width: 997px) {

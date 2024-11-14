@@ -1,0 +1,61 @@
+@import url("./common.css");
+
+header {
+  background-color: var(--clr-primary-7);
+  color: var(--clr-white);
+  padding: 10px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+.recurit-job-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.recurit-job-container h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.recurit-job-container > p {
+  text-align: center;
+}
+
+.recurit-job-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.recurit-job {
+  background: #e9ecef;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  flex: 1 1 calc(45% - 20px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+button {
+  margin-top: 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #218838;
+}
+@media (max-width: 768px) {
+  .job {
+    flex: 1 1 100%;
+  }
+}

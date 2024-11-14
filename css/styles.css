@@ -94,7 +94,7 @@ nav:before {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("../img/nav-bar-bg-03.jpg"); /* Replace with your image */
+  background-image: url("../img/slide/japan_slide_007.jpg");
   background-size: cover;
   background-position: center;
   opacity: 0.1;
@@ -228,10 +228,10 @@ footer {
   background: var(--clr-primary-5);
   padding: 20px 0;
   text-align: center;
-  position: fixed;
+  /*   position: sticky;
   bottom: 0;
   left: 0;
-  right: 0;
+  right: 0; */
 }
 
 footer p {
