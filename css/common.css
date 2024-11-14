@@ -1,0 +1,36 @@
+/* Define CSS Variables for Each Season */
+:root {
+  --clr-primary-1: #fff6f9; /* Very Light Pink */
+  --clr-primary-2: #f8e1e7; /* Light Cherry Blossom Pink */
+  --clr-primary-3: #f1b2c4; /* Soft Pink */
+  --clr-primary-4: #e79cb0; /* Medium Pink */
+  --clr-primary-5: #e66a8d; /* Bright Pink */
+  --clr-primary-6: #d45a7a; /* Deep Pink */
+  --clr-primary-7: #b52d4c; /* Dark Rose */
+  --clr-primary-8: #8c1a32; /* Rich Red */
+  --clr-primary-9: #6d001f; /* Dark Cherry Red */
+  --clr-primary-10: #3c000c; /* Very Dark Red */
+
+  --clr-gray-1: #fdfdfd; /* White Smoke */
+  --clr-gray-2: #e0e0e0; /* Light Gray */
+  --clr-gray-3: #bdbdbd; /* Gray */
+  --clr-gray-4: #9e9e9e; /* Dark Gray */
+  --clr-gray-5: #757575; /* Medium Gray */
+  --clr-gray-6: #616161; /* Dim Gray */
+  --clr-gray-7: #424242; /* Darker Gray */
+  --clr-gray-8: #212121; /* Almost Black */
+  --clr-gray-9: #000000; /* Black */
+  --clr-gray-10: #333333; /* Dark Gray */
+
+  --clr-white: #fff;
+  --ff-primary: "Roboto", sans-serif;
+  --transition: all 0.3s linear;
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+
+  --font-bold: 500;
+
+  --large-container: 1600px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Firebase Auth Example with Guest Access</title>
+    <link rel="stylesheet" href="./css/login.css" />
+  </head>
+  <body>
+    <div></div>
+    <div class="login-container">
+      <div class="logo" href="#">
+        <h1>日旅社</h1>
+      </div>
+
+      <div id="user-signed-out" class="auth-container">
+        <h2 class="black">Sign Up / Log In</h2>
+        <form id="auth-form">
+          <input type="email" id="email" placeholder="Email" required />
+          <input type="password" id="password" placeholder="Password" required />
+          <button type="submit" id="sign-in-btn">Log In</button>
+          <button type="button" id="sign-up-btn">Sign Up</button>
+        </form>
+        <p id="error-message" class="error-message"></p>
+        <button id="guest-btn" class="guest-btn">Continue as Guest</button>
+      </div>
+
+      <div id="user-signed-in" class="auth-container auth-sign-up-container" style="display: none">
+        <h2>Welcome, <span id="user-email"></span></h2>
+        <button id="sign-out-btn">Sign Out</button>
+      </div>
+
+      <div id="guest-access" style="display: none">
+        <h2>Welcome, Guest!</h2>
+        <p>You can explore the site without logging in.</p>
+        <button id="continue-guest-btn">Continue Browsing</button>
+      </div>
+    </div>
+
+    <script type="module" src="./js/login.js" defer></script>
+
+    <!-- <script src="./js/login.js" defer></script> -->
+  </body>
+</html>
