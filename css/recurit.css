@@ -7,10 +7,6 @@ header {
   text-align: center;
 }
 
-header h1 {
-  font-size: 2.5rem;
-}
-
 .recurit-job-container {
   max-width: 1200px;
   margin: 20px auto;
@@ -54,6 +50,12 @@ button {
 button:hover {
   background-color: #218838;
 }
+
+.main-content {
+  padding: 20px;
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   .job {
     flex: 1 1 100%;

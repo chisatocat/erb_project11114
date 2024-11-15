@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>日旅社</title>
+    <title>日旅社 - 聯絡我們</title>
 
     <link
       rel="icon"
@@ -28,8 +28,9 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/hero.css" />
     <link rel="stylesheet" href="./css/whatsapp.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
   </head>
   <body>
     <nav>
@@ -70,7 +71,7 @@
         </div>
 
         <ul class="nav-list">
-          <li class="nav-list-item current-page">
+          <li class="nav-list-item">
             <div class="nav-list-link-container">
               <a href="./home.html">
                 <img src="./img/icon/home.svg" alt="" />
@@ -244,7 +245,7 @@
               </a>
             </div>
           </li>
-          <li class="nav-list-item">
+          <li class="nav-list-item current-page">
             <div class="nav-list-link-container">
               <a href="./contact.html">
                 <img src="./img/icon/crane.svg" alt="" />
@@ -258,31 +259,8 @@
       <button class="toggle" id="toggle-button">☰</button>
     </nav>
 
-    <div class="hero">
-      <div
-        class="slide active"
-        style="background-image: url('./img/slide/japan_slide_007.jpg')"
-      ></div>
-      <div
-        class="slide"
-        style="background-image: url('./img/slide/japan_slide_002.jpg')"
-      ></div>
-      <div
-        class="slide"
-        style="background-image: url('./img/slide/japan_slide_003.jpg')"
-      ></div>
-      <div
-        class="slide"
-        style="background-image: url('./img/slide/japan_slide_004.jpg')"
-      ></div>
-      <div
-        class="slide"
-        style="background-image: url('./img/slide/japan_slide_005.jpg')"
-      ></div>
-      <!--  <div class="controls">
-        <button class="hero-btn" onclick="prevSlide()">&#10094;</button>
-        <button class="hero-btn" onclick="nextSlide()">&#10095;</button>
-      </div> -->
+    <div class="banner-container">
+      <img src="./img/contact/contactus.jpg" alt="recurit banner" />
     </div>
 
     <div class="whatsapp-icon">
@@ -294,11 +272,134 @@
       </a>
     </div>
 
+    <header>
+      <h1>聯絡我們</h1>
+    </header>
+
+    <div class="contactus-wrapper">
+      <div class="contactus-general-info-container mt-3">
+        <div class="contactus-general-info-item-container">
+          <i class="fa-regular fa-envelope"></i>
+          <p>sales@japantour.com</p>
+        </div>
+
+        <div class="contactus-general-info-item-container">
+          <i class="fa-solid fa-phone"></i>
+          <p>2711 9296</p>
+        </div>
+
+        <div class="contactus-general-info-item-container">
+          <i class="fa-brands fa-whatsapp"></i>
+          <p>2711 1234</p>
+        </div>
+
+        <div class="contactus-general-info-item-container">
+          <i class="fa-solid fa-location-dot"></i>
+          <p>王子大廈8樓觀塘開源道71號</p>
+        </div>
+      </div>
+
+      <div class="contactus-container pt-3">
+        <div class="form-container">
+          <form
+            id="contact-form"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+          >
+            <!-- Replace with your Access Key -->
+            <input
+              type="hidden"
+              name="access_key"
+              value="01dc0bde-00b7-4769-b300-645a9eeef2d0"
+            />
+            <label for="email">電子郵件</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="輸入有效的電子郵件"
+              required
+            />
+
+            <label for="name">姓名</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="您的名字"
+              required
+            />
+
+            <label for="message">訊息</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="給我們的訊息"
+              required
+            ></textarea>
+
+            <button type="submit">提交</button>
+          </form>
+
+          <div class="success-message mt-2" id="success-message">
+            Your message has been sent successfully!
+          </div>
+          <div class="error-message mt-2" id="error-message">
+            There was an error sending your message. Please try again.
+          </div>
+        </div>
+
+        <div class="info-container mt-1">
+          <h2>取得聯繫</h2>
+          <p>
+            如果您有任何問題，隨時通過左側的表單或我們的社交媒體渠道與我們聯絡。
+          </p>
+
+          <div class="contactus-info-container">
+            <div class="contactus-info-item"></div>
+            <div class="contactus-info-item"></div>
+            <div class="contactus-info-item"></div>
+            <div class="contactus-info-item"></div>
+          </div>
+
+          <div class="contactus-social-media-container">
+            <a href="www.facebook.com">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+
+            <a href="www.twitter.com">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+
+            <a href="www.youtube.com">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a href="instagram.com">
+              <i class="fa-brands fa-square-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1551.92776940549!2d114.22404178366305!3d22.31103276515172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34040145637bb059%3A0x792dd28d74fcf66c!2z6KeA5aGY6ZaL5rqQ6YGTNzHomZ_njovlrZDlpKflu4g!5e0!3m2!1szh-TW!2shk!4v1731608767688!5m2!1szh-TW!2shk"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
     <footer>
       <p>&copy; 2024 日旅社版權所有.</p>
     </footer>
 
     <script src="./js/script.js"></script>
     <script src="./js/hero.js"></script>
+    <script src="./js/submit.js"></script>
   </body>
 </html>
