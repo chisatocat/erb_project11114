@@ -268,7 +268,7 @@ footer p {
 /*  Responsive styles  */
 /***********************/
 @media (max-width: 1200px) {
-  .nav-list-link-container {
+  .nav-list-link-container a {
     display: flex;
     flex-direction: column;
     justify-content: center;
